@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div id="billAmount">
+            <p id="baseBillTitle">Bill Amount</p>
+            <input type="number" id="baseBillAmount" class="space" onkeyup="getTotal()">
+        </div>
+
+        <div id="tipMethod" class="space">
+            <label for="methodLabel">Tip Method</label> <br>
+            <select name="tipMethodSelect" id="selectTipMethod" onchange="displayTipMethod()">
+                <option value="presentages">Presentages %</option>
+                <option value="amount">Amount</option>
+            </select>
+        </div>
+        <div id="presentages" style="display: block;" class="space leftSideText">
+            <label for="presentagesAmountLabel">Presentage Amount</label> <br>
+            <select name="tipMethodSelect" id="presentagesAmount" onchange="getTotal()">
+                <option value="10">10%</option>
+                <option value="12">12%</option>
+                <option value="13">13%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+            </select>
+        </div>
+
+        <div id="customeTipAmount" style="display: none;" class="space leftSideText">
+            <label for="customeTipAmountLabel">Money Amount</label> <br>
+            <input type="number" id="customeTipMoneyAmount" onkeyup="validedAmountInput(this)">
+
+        </div>
+
+        <div id="dinersNumber" class="space leftSideText">
+            <label for="dinersNumberLabel">Diners Number</label> <br>
+            <input type="number" id="dinersNumberInput" value="1" onkeyup="getTotal()">
+        </div>
+
+        <div id="rightSideTotalBillAmount">
+            <h2 id="totalBillTitle" class="totalBillText">Total Amount</h2>
+            <h3 id="totalBillAmount" class="totalBillText">0</h3>
+        </div>
+
+        <div id="totalPerDiner">
+            <h2 id="totalPerDinerTitle" class="totalBillText">Total Per Diner Amount</h2>
+            <h3 id="totalPerDinerAmount" class="totalBillText">0</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>

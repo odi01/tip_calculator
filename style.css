@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    width: 100%;
+    position: relative;
+    font-family: Arial;
+    background-color: #28292b
+
+}
+
+.content {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 30px;
+    color: #d5dde8;
+}
+
+#baseBillTitle {
+    margin: 0;
+}
+
+.space {
+    margin-bottom: 50px;
+}
+
+#rightSideTotalBillAmount {
+    margin-top: 70px;
+}
+
+input, select {
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    font-size: 22px;
+    border-radius:6px;
+    margin-top: 10px;
+    background-color: #4a4b4e;
+    color: #d5dde8;
+}
+
+h2 {
+font-weight: 520
+}
+
+#totalPerDiner{
+    margin-top: 70px;
+}
